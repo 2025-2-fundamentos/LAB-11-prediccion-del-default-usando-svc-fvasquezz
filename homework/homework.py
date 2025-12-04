@@ -152,8 +152,8 @@ def hacer_pipeline(estimador):
     pipeline=Pipeline(
         steps=[
             ("preproceso",preproceso),
-            ("pca",PCA(n_components=None)),
             ("seleccion",seleccion),
+            ("pca",PCA(n_components=None)),
             ("estimador",estimador)
         ]
     )
